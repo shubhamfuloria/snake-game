@@ -146,7 +146,7 @@ function detectColision() {
     }
   }
 
-  if (head.x >= 40 || head.y >= 40 || head.x <= 0 || head.y <= 0 || isHeadCollidedWithBody) {
+  if (head.x > 40 || head.y > 40 || head.x <= 0 || head.y <= 0 || isHeadCollidedWithBody) {
     gameOver();
   } else if (head.x == food.x && head.y == food.y) {
     // eat food'
